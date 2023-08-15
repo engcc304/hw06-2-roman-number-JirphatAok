@@ -75,3 +75,23 @@
         6 x 9 = 54
 
 */
+#include <stdio.h>
+int main () {
+    int start, End, xxx;
+    printf( "Start :\n") ;
+    scanf( "%d",&start ) ;
+    
+    printf( "End :\n" ) ;
+    scanf( "%d",&End ) ;
+    for ( int i = start; i <= End; i++)
+    {
+        for (int i2 = 1; i2 <= 9; i2++)
+        {
+           printf( "%d x %d = %d\n",i, i2, i * i2) ;
+        }//end for
+        printf( "\n" ) ;
+    }//end for
+    
+    return 0 ;
+
+}
